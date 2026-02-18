@@ -75,11 +75,12 @@ def play_game():
         #Switch to the other player
         current = 1 - current  
 
-    again = input("Play again? YES / NO: ").strip().lower()
+    again = input("Play again? YES / NO: ").strip().upper()
     if again == "YES":
         play_game()
     else:
         print("\nThanks for playing! PAALAM \n")
 
 play_game()
+
 
